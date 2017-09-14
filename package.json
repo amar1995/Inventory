@@ -1,0 +1,28 @@
+{
+  "name": "inventory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amar1995/Inventory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amar1995/Inventory/issues"
+  },
+  "homepage": "https://github.com/amar1995/Inventory#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.12.0"
+  }
+}

@@ -2,27 +2,47 @@
 <html>
 <head>
 	<title>Inventory</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/myCss.css">
+	<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
+	<!--nav-bar-->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Inventory</a>
-			<div class="nav navbar-right">
-				<ul class="nav navbar-nav navbar-right">
-			      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-			      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span>
+			       <span class="icon-bar"></span> 
+			    </button>
+			    <a class="navbar-brand" href="#">Inventory</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			    <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 			    </ul>
 			</div>
+	    </div>
+    </nav>
+
+	<!--Side-bar-->
+
+	<div id="side-bar">
+		<div class="toggle-btn" onclick="toggleSideBar()">
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
-	</nav>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 col-sm-3">
-				
-			</div>
-		</div>
+		<ul>
+		<li><a href="/"><span class="glyphicon glyphicon-home"></span> DashBoard</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-user"></span> Customers</a></li>
+		<li><a href="/item"><span class="glyphicon glyphicon-item"></span> Items</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-list"></span> Sales Order</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-list"></span> Purchase Order</a></li>
+		</ul>
 	</div>
+	<script type="text/javascript" src="/myJs.js"></script>
 </body>
 </html>
